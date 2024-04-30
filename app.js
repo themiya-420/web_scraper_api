@@ -1,13 +1,13 @@
 const express = require("express");
-const cors = require("cors");
+const scrapeRoutes = require("./routes/scraper");
 
 const app = express();
-const port = process.env.PORT || 8000;
+const PORT = 3000;
 
-app.use(cors());
+// Use scrapeRoutes for '/scrape' endpoint
+app.use("/scrape", scrapeRoutes);
 
-app.use(express.json());
-
-app.listen(port, () => {
-  console.log(`server running on http://localhost:${port}`);
+// Start the server
+app.listen(PORT, () => {
+  console.log(`Server is running on http://localhost:${PORT}`);
 });
