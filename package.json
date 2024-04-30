@@ -1,0 +1,29 @@
+{
+  "name": "web_scraper_api",
+  "version": "1.0.0",
+  "description": "Web Scraping API to fetch Revies from TripAdvisor",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev" : "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/themiya-420/web_scraper_api.git"
+  },
+  "keywords": [
+    "Web",
+    "Scraping"
+  ],
+  "author": "Themiya Induwara (themiya-420)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/themiya-420/web_scraper_api/issues"
+  },
+  "homepage": "https://github.com/themiya-420/web_scraper_api#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.0"
+  }
+}
